@@ -10,8 +10,7 @@ const Navigation = () => {
     { name: 'About', href: 'about', icon: User },
     { name: 'Projects', href: 'projects', icon: Code },
     { name: 'Experience', href: 'internships', icon: Briefcase },
-    { name: 'Contact', href: 'contact', icon: Mail },
-    { name: 'Resume', href: 'resume', icon: FileText }
+    { name: 'Contact', href: 'contact', icon: Mail }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -100,6 +99,13 @@ const Navigation = () => {
               );
             })}
             
+            {/* Download Resume Button */}
+            <button
+              onClick={() => scrollToSection('resume')}
+              className="ml-4 px-4 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-medium hover:shadow-neon transition-all duration-300 hover:scale-105"
+            >
+              📄 Resume
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -138,6 +144,17 @@ const Navigation = () => {
             })}
           </div>
           
+          {/* Mobile Resume Button */}
+          <button
+            onClick={() => {
+              scrollToSection('resume');
+              setIsMenuOpen(false);
+            }}
+            className="w-full flex items-center justify-center gap-3 px-4 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-medium hover:shadow-neon transition-all duration-300 hover:scale-105 mt-6"
+          >
+            <FileText className="w-5 h-5" />
+            📄 Download Resume
+          </button>
         </div>
       </div>
 

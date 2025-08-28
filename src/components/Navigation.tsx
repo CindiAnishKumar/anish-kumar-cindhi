@@ -8,12 +8,8 @@ const Navigation = () => {
   const navigation = [
     { name: 'Home', href: 'hero', icon: Home },
     { name: 'About', href: 'about', icon: User },
-    { name: 'Skills', href: 'skills', icon: Code },
     { name: 'Projects', href: 'projects', icon: Code },
     { name: 'Experience', href: 'internships', icon: Briefcase },
-    { name: 'Education', href: 'education', icon: User },
-    { name: 'Certificates', href: 'certificates', icon: FileText },
-    { name: 'Achievements', href: 'achievements', icon: FileText },
     { name: 'Contact', href: 'contact', icon: Mail }
   ];
 

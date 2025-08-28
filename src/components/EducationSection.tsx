@@ -49,7 +49,7 @@ const EducationSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        <div className="space-y-6 lg:space-y-8 max-w-3xl mx-auto">
           {education.map((edu, index) => (
             <Card 
               key={index} 

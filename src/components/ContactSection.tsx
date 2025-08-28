@@ -33,7 +33,7 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="section-padding">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-8 lg:mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient">
             Get In Touch
@@ -43,9 +43,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="max-w-3xl mx-auto">
           {/* Contact Info */}
-          <Card className="glass-card p-6 lg:p-8 rounded-2xl max-w-2xl w-full">
+          <Card className="glass-card p-6 lg:p-8 rounded-2xl w-full">
             <h3 className="text-xl lg:text-2xl font-bold mb-6 text-gradient-accent">
               Let's Connect
             </h3>

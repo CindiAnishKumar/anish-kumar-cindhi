@@ -8,16 +8,32 @@ const EducationSection = () => {
     {
       degree: "Bachelor of Technology in Computer Science Engineering",
       institution: "RGUKT Basar (Rajiv Gandhi University of Knowledge Technologies)",
-      year: "2021 - 2025",
+      duration: "2021 - 2025",
       location: "Nirmal, Telangana",
-      description: "Final year student specializing in Software Engineering, Data Structures & Algorithms, and Web Technologies."
+      status: "Fresher",
+      grade: "CGPA: 8.4/10",
+      highlights: [
+        "Data Structures & Algorithms",
+        "Database Management Systems",
+        "Computer Networks",
+        "Operating Systems",
+        "Web Technologies",
+        "LLMS"
+      ]
     },
     {
       degree: "Intermediate (MPC)",
-      institution: "RGUKT Basar",
-      year: "2019 - 2021",
+      institution: "RGUKT Basar (Rajiv Gandhi University of Knowledge Technologies)",
+      duration: "2019 - 2021",
       location: "Nirmal, Telangana",
-      description: "Completed with Mathematics, Physics, Chemistry focus."
+      status: "Completed",
+      grade: "CGPA: 9.67/10",
+      highlights: [
+        "Mathematics",
+        "Physics", 
+        "Chemistry",
+        "English"
+      ]
     }
   ];
 
@@ -33,29 +49,43 @@ const EducationSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {education.map((edu, index) => (
             <Card 
               key={index} 
-              className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up"
+              className="glass-card p-6 lg:p-8 rounded-2xl hover:scale-105 transition-all duration-300 animate-slide-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/20 backdrop-blur-md rounded-full p-2 mt-1">
-                  <GraduationCap className="w-5 h-5 text-primary" />
+              <div className="space-y-4">
+                {/* Header with icon and status */}
+                <div className="flex items-start justify-between gap-4">
+                  <div className="bg-primary/20 backdrop-blur-md rounded-full p-3">
+                    <GraduationCap className="w-6 h-6 text-primary" />
+                  </div>
+                  <div className="text-right">
+                    <Badge variant="secondary" className="mb-2">
+                      {edu.status}
+                    </Badge>
+                    <div className="flex items-center gap-2 text-accent">
+                      <Trophy className="w-4 h-4" />
+                      <span className="text-sm font-semibold">{edu.grade}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
+
+                {/* Main content */}
+                <div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-3 leading-tight">
                     {edu.degree}
                   </h3>
-                  <p className="text-md text-primary font-semibold mb-2">
+                  <p className="text-primary font-semibold mb-4 text-lg">
                     {edu.institution}
                   </p>
                   
-                  <div className="flex flex-wrap gap-4 text-muted-foreground mb-3">
+                  <div className="flex flex-wrap gap-4 text-muted-foreground mb-4">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span className="text-sm">{edu.year}</span>
+                      <span className="text-sm font-medium">{edu.duration}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -63,10 +93,22 @@ const EducationSection = () => {
                     </div>
                   </div>
 
-                  {edu.description && (
-                    <p className="text-muted-foreground leading-relaxed text-sm">
-                      {edu.description}
-                    </p>
+                  {/* Highlights */}
+                  {edu.highlights && (
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground mb-3">Key Subjects:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {edu.highlights.map((highlight, idx) => (
+                          <Badge 
+                            key={idx} 
+                            variant="outline" 
+                            className="text-xs px-2 py-1 bg-primary/10 border-primary/20 text-primary hover:bg-primary/20 transition-colors"
+                          >
+                            {highlight}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>

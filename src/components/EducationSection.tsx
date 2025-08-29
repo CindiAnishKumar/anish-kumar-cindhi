@@ -96,7 +96,7 @@ const EducationSection = () => {
                   {/* Highlights */}
                   {edu.highlights && (
                     <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-3">Key Subjects:</h4>
+                      <h4 className="text-sm font-semibold text-foreground mb-3">📚 Key Subjects:</h4>
                       <div className="flex flex-wrap gap-2">
                         {edu.highlights.map((highlight, idx) => (
                           <Badge 

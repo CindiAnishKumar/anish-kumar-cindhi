@@ -12,7 +12,7 @@ const achievements = [
   },
   {
     title: 'Polycet Exam Excellence',
-    description: 'Achieved competitive rank in Telangana State Polytechnic Common Entrance Test',
+    description: 'Achieved 2047 Rank in Telangana State Polytechnic Common Entrance Test',
     icon: Star,
     highlight: 'State Rank',
     year: '2019'

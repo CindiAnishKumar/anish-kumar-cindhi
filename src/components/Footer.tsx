@@ -11,7 +11,7 @@ const Footer = () => {
             <span className="text-gradient font-semibold">Cindi Anish Kumar</span>
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 • Full-stack Developer • Let's build the future together ✨
+            © 2025 • Full-stack Developer • Let's build the future together ✨
           </p>
         </div>
       </div>

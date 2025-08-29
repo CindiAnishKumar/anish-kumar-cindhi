@@ -7,10 +7,10 @@ const internships = [
   {
     title: 'Cloud/DevOps Internship',
     company: 'Abhi Trainings',
-    duration: '3 Months',
-    description: 'Gained hands-on experience with cloud infrastructure, containerization, and DevOps practices.',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Infrastructure as Code'],
-    achievements: ['Deployed scalable applications', 'Automated deployment pipelines', 'Cloud cost optimization']
+    duration: 'May 2024- July 2024',
+    description: 'Built and automated CI/CD pipelines, implemented container orchestration, and contributed to cloud-native deployment workflows for scalable Java applications.',
+    skills: ['AWS', 'Jenkins','Docker', 'Kubernetes',  'Maven','SonarQube'],
+    achievements: ['Built CI/CD pipelines using GitHub Actions, Maven, and SonarQube.', 'Containerized and deployed Java apps with Docs.', 'Streamlined deployments using GitHub Webhooks, Shell Scripts with automated testing.']
   }
 ];
 

@@ -6,26 +6,26 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'cindidev@example.com',
-    href: 'mailto:cindidev@example.com'
+    value: 'anishkumarcindhi@gmail.com',
+    href: 'anishkumarcindhi@gmail.com'
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210'
+    value: '+91 8179291365',
+    href: 'tel:+918179291365'
   },
   {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/cindianish',
-    href: 'https://github.com/cindianish'
+    value: 'github.com/anishkumarcindhi',
+    href: 'https://github.com/CindiAnishKumar'
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/cindianish',
-    href: 'https://linkedin.com/in/cindianish'
+    value: 'linkedin.com/in/anishkumarcindhi',
+    href: 'https://www.linkedin.com/feed/'
   }
 ];
 

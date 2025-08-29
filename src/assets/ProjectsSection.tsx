@@ -34,7 +34,7 @@ const projects = [
     techStack: ['Java', 'Swing ', 'AWT','MySQL' ],
     highlights: [ 'User-friendly GUI built with Java Swing and AWT','Real-time deposit, withdrawal, and transfer transactions', 'Transaction history and balance tracking',],
     image: bankingImg,
-    githubUrl: 'https://github.com/CindiAnishKumar/Banking-Managment',
+    githubUrl: 'https://github.com/cindianish/banking-system',
     demoUrl: 'https://banking-system-demo.herokuapp.com',
     featured: false
   },
@@ -110,7 +110,6 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold mb-2 text-primary">Technology Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech) => (
                       <Badge 
@@ -132,13 +131,13 @@ const ProjectsSection = () => {
                     <Github size={16} />
                     Code
                   </button>
-                  {/*<button 
+                  <button 
                     onClick={() => handleDemoClick(project.demoUrl)}
                     className="btn-neon px-4 py-2 rounded-lg text-sm flex items-center gap-2 flex-1 justify-center hover:scale-105 transition-transform"
                   >
                     <ExternalLink size={16} />
                     Demo
-                  </button>*/}
+                  </button>
                 </div>
               </div>
             </Card>

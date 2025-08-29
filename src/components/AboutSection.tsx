@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import profilePhoto from '@/assets/profile-photo.jpg';
+import profilePhoto from '@/assets/anish-kumar-cindhi-photo.jpeg';
 
 const AboutSection = () => {
   return (
@@ -14,8 +14,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate <span className="text-primary font-semibold">Full-Stack Developer</span> and 
-                final year Computer Science Engineering student at RGUKT Basar.
+                I'm a passionate <span className="text-primary font-semibold">Full-Stack Developer</span> and a recent Computer Science Engineering 2025 graduate from RGUKT Basar.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -27,7 +26,7 @@ const AboutSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm always excited to learn new technologies and contribute to innovative 
                 projects that make a real-world impact. Currently exploring 
-                <span className="text-secondary font-semibold"> AI/ML</span> and 
+                <span className="text-secondary font-semibold"> React And Spring Frameworks</span> and 
                 <span className="text-accent font-semibold"> microservices architecture</span>.
               </p>
             </div>

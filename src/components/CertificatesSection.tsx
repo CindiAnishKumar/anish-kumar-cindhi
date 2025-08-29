@@ -8,13 +8,13 @@ const certificates = [
     title: 'IIITH Remote Internship',
     subtitle: 'Introduction to Natural Language Processing',
     issuer: 'IIIT Hyderabad',
-    year: '2024',
+    year: '2023',
     icon: BookOpen,
     color: 'from-primary to-secondary'
   },
   {
     title: 'AWS Cloud DevOps Internship',
-    subtitle: 'Cloud Infrastructure & DevOps Practices',
+    subtitle: 'Cloud & DevOps Practices',
     issuer: 'Amazon Web Services',
     year: '2024',
     icon: Cloud,

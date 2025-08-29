@@ -3,33 +3,34 @@ import { Card } from '@/components/ui/card';
 
 const skillCategories = {
   "Frontend Development": [
-    { name: 'React.js', icon: '⚛️', color: 'from-blue-500 to-cyan-400' },
-    { name: 'JavaScript', icon: '🟨', color: 'from-yellow-500 to-yellow-400' },
-    { name: 'TypeScript', icon: '🔷', color: 'from-blue-600 to-blue-500' },
     { name: 'HTML/CSS', icon: '🌐', color: 'from-orange-500 to-red-500' },
-    { name: 'Tailwind CSS', icon: '🎨', color: 'from-teal-500 to-blue-500' }
+    { name: 'JavaScript', icon: '🟨', color: 'from-yellow-500 to-blue-400' },
+    { name: 'React.js', icon: '⚛️', color: 'from-blue-500 to-cyan-400' },
+    { name: 'Tailwind CSS', icon: '🎨', color: 'from-teal-500 to-blue-500' },
+    { name: 'TypeScript', icon: '🔷', color: 'from-green-600 to-red-500' }     
   ],
   "Backend Development": [
     { name: 'Java', icon: '☕', color: 'from-orange-600 to-red-600' },
-    { name: 'Spring Boot', icon: '🍃', color: 'from-green-500 to-green-400' },
-    { name: 'Node.js', icon: '🟢', color: 'from-green-600 to-green-500' },
-    { name: 'PHP', icon: '🐘', color: 'from-purple-600 to-blue-600' }
+    { name: 'Spring Boot', icon: '🍃', color: 'from-blue-600 to-blue-500' },
+    { name: 'Node.js', icon: '🟢', color: 'from-green-600 to-blue-500' },
+    { name: 'PHP', icon: '❄️', color: 'from-purple-600 to-blue-600' }
   ],
   "Database & Storage": [
-    { name: 'MongoDB', icon: '🍃', color: 'from-green-600 to-green-500' },
     { name: 'MySQL', icon: '🐬', color: 'from-blue-600 to-orange-500' },
+    { name: 'MongoDB', icon: '🍃', color: 'from-green-600 to-red-500' },
     { name: 'PostgreSQL', icon: '🐘', color: 'from-blue-700 to-blue-600' }
   ],
   "Cloud & DevOps": [
     { name: 'AWS', icon: '☁️', color: 'from-orange-500 to-yellow-500' },
-    { name: 'Docker', icon: '🐳', color: 'from-blue-500 to-cyan-500' },
+    { name: 'Jenkins', icon: '🧛', color: 'from-green-600 to-blue-500' },
+    { name: 'Docker', icon: '🐳', color: 'from-blue-500 to-green-500' },
     { name: 'Kubernetes', icon: '⚙️', color: 'from-blue-600 to-purple-600' }
   ],
   "Development Tools": [
     { name: 'Git & GitHub', icon: '🐱', color: 'from-gray-700 to-gray-600' },
     { name: 'VS Code', icon: '💻', color: 'from-blue-600 to-blue-500' },
     { name: 'Postman', icon: '📮', color: 'from-orange-500 to-red-500' },
-    { name: 'Figma', icon: '🎨', color: 'from-purple-500 to-pink-500' }
+    //{ name: 'Figma', icon: '🎨', color: 'from-purple-500 to-pink-500' }
   ]
 };
 

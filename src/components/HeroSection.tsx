@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Badge } from '@/components/ui/badge';
-import developerHero from '@/assets/developer-hero.png';
+import developerHero from '@/assets/heroimage.png';
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('');

@@ -7,36 +7,36 @@ const ResumeSection = () => {
   const handleDownload = () => {
     // Create a link to download resume
     const link = document.createElement('a');
-    link.href = '/resume-cindi-anish-kumar.pdf'; // You would put your actual resume file here
-    link.download = 'Cindi_Anish_Kumar_Resume.pdf';
+    link.href = '/Anish_Kumar_Cindhi_TechWave.pdf'; // You would put your actual resume file here
+    link.download = '/Anish_Kumar_Cindhi_TechWave.pdf';
     link.click();
   };
 
   const handleView = () => {
     // Open resume in new tab
-    window.open('/resume-cindi-anish-kumar.pdf', '_blank');
+    window.open('/Anish_Kumar_Cindhi_TechWave.pdf', '_blank');
   };
 
   const highlights = [
     {
       icon: GraduationCap,
       title: 'Education',
-      content: 'B.Tech in CSE - RGUKT Basar (Final Year)'
+      content: 'B.Tech in CSE - RGUKT Basar (Graduate)'
+    },
+    {
+      icon: FileText,
+      title: 'Projects',
+      content: 'Developed Multiple Full Stack Projects'
     },
     {
       icon: Briefcase,
       title: 'Experience',
-      content: '2+ Internships in Cloud & DevOps'
+      content: 'Internship done in Cloud & DevOps'
     },
     {
       icon: Award,
       title: 'Achievements',
       content: 'SIH 2023 Participant, NMMS Scholar'
-    },
-    {
-      icon: FileText,
-      title: 'Projects',
-      content: '15+ Full-Stack Projects Completed'
     }
   ];
 
@@ -113,17 +113,17 @@ const ResumeSection = () => {
               })}
             </div>
             
-            <div className="mt-8 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
+            {/*<div className="mt-8 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
               <p className="text-sm text-center text-muted-foreground">
-                📧 For detailed portfolio or custom CV format, 
-                <span className="text-primary font-semibold"> contact me directly</span>
+              
               </p>
             </div>
+            */}
           </Card>
         </div>
 
         {/* Stats Section */}
-        <Card className="glass-card p-6 rounded-2xl mt-8">
+        {/*<Card className="glass-card p-6 rounded-2xl mt-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-2xl font-bold text-primary mb-1">4+</div>
@@ -143,6 +143,7 @@ const ResumeSection = () => {
             </div>
           </div>
         </Card>
+        */}
       </div>
     </section>
   );
